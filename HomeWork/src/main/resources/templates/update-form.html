@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+<form method="post" action="/update">
+    <input type="hidden" placeholder="Name" name="id" th:value="${book.id}"><br><br>
+    <input type="text" name="name" th:value="${book.name}" ><br><br>
+    <input type="text" name="author" th:value="${book.author}"><br><br>
+    <input type="text" name="pages" th:value="${book.pages}"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
